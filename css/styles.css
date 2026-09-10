@@ -1,0 +1,422 @@
+/* ========================================
+   ESTILOS GENERALES
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   ENCABEZADO
+   ======================================== */
+
+.header {
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav a:hover,
+.nav a:focus {
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   CONTENIDO GENERAL
+   ======================================== */
+
+main {
+    min-height: 70vh;
+}
+
+section,
+aside {
+    padding: 3rem 0;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1e293b;
+}
+
+h3 {
+    color: #334155;
+}
+
+p {
+    max-width: 750px;
+}
+
+
+/* ========================================
+   HERO
+   ======================================== */
+
+.hero {
+    background-color: #e2e8f0;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero a,
+.course-card a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+}
+
+.hero a:hover,
+.hero a:focus,
+.course-card a:hover,
+.course-card a:focus {
+    background-color: #1d4ed8;
+}
+
+
+/* ========================================
+   CURSOS
+   ======================================== */
+
+.featured-courses,
+.courses {
+    background-color: white;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.course-card {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.course-card header {
+    margin-bottom: 1rem;
+}
+
+.course-card ul {
+    padding-left: 1.5rem;
+}
+
+
+/* ========================================
+   BENEFICIOS
+   ======================================== */
+
+.benefits {
+    background-color: #e2e8f0;
+}
+
+.benefits .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.benefits h2 {
+    grid-column: 1 / -1;
+}
+
+.benefits article {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+
+/* ========================================
+   INFORMACIÓN
+   ======================================== */
+
+.about {
+    background-color: white;
+}
+
+
+/* ========================================
+   PROFESORES
+   ======================================== */
+
+.teachers {
+    background-color: white;
+}
+
+.teacher-card {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.teacher-card:last-child {
+    margin-bottom: 0;
+}
+
+.teacher-card h4 {
+    color: #475569;
+}
+
+
+/* ========================================
+   RECURSOS
+   ======================================== */
+
+.resources {
+    background-color: white;
+}
+
+.resource-card {
+    background-color: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resource-card:last-child {
+    margin-bottom: 0;
+}
+
+.resource-card details {
+    margin-top: 1rem;
+}
+
+.resource-card summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tools {
+    background-color: #e2e8f0;
+}
+
+.tools dl {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.tools dt {
+    font-weight: bold;
+    color: #334155;
+    margin-top: 1rem;
+}
+
+.tools dt:first-child {
+    margin-top: 0;
+}
+
+.tools dd {
+    margin-left: 0;
+    margin-top: 0.25rem;
+}
+
+
+/* ========================================
+   CONSEJOS
+   ======================================== */
+
+.learning-tip {
+    background-color: #dbeafe;
+}
+
+
+/* ========================================
+   CONTACTO
+   ======================================== */
+
+.contact {
+    background-color: white;
+}
+
+form {
+    max-width: 750px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #334155;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    font: inherit;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #1d4ed8;
+}
+
+.contact-information {
+    background-color: #e2e8f0;
+}
+
+.contact-information a {
+    color: #1d4ed8;
+}
+
+
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
+.footer {
+    background-color: #1e293b;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer p {
+    margin-top: 0;
+}
+
+.footer address {
+    font-style: normal;
+}
+
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 800px) {
+
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .course-list,
+    .benefits .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 92%;
+    }
+
+    section,
+    aside {
+        padding: 2rem 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .nav a {
+        padding: 0.4rem 0;
+    }
+
+}
