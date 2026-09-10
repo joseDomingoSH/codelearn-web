@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Contacta con CodeLearn para enviar dudas, comentarios y sugerencias sobre los cursos de programación.">
+
+    <meta name="author" content="CodeLearn">
+
+    <title>Contacto | CodeLearn</title>
+</head>
+
+<body>
+
+    <!-- Encabezado principal -->
+    <header class="header">
+
+        <div class="container">
+
+            <h1 class="logo">CodeLearn</h1>
+
+            <!-- Navegación principal -->
+            <nav class="nav" aria-label="Navegación principal">
+
+                <a href="../index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="profesores.html">Profesores</a>
+                <a href="recursos.html">Recursos</a>
+                <a href="contacto.html">Contacto</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Presentación -->
+        <section class="contact-header">
+
+            <div class="container">
+
+                <h2>Contacto</h2>
+
+                <p>
+                    ¿Tienes alguna duda, comentario o sugerencia?
+                    Envíanos un mensaje y estaremos encantados de recibirlo.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Formulario de contacto -->
+        <section class="contact">
+
+            <div class="container">
+
+                <h2>Envíanos un mensaje</h2>
+
+                <form action="#" method="post">
+
+                    <fieldset>
+
+                        <legend>Información de contacto</legend>
+
+                        <p>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </p>
+
+                        <p>
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" id="correo" name="correo" required>
+                        </p>
+
+                    </fieldset>
+
+
+                    <fieldset>
+
+                        <legend>Mensaje</legend>
+
+                        <p>
+                            <label for="asunto">Asunto:</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </p>
+
+                        <p>
+                            <label for="tipo">Tipo de mensaje:</label>
+
+                            <select id="tipo" name="tipo">
+
+                                <option value="duda">Duda</option>
+                                <option value="comentario">Comentario</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+
+                            </select>
+
+                        </p>
+
+                        <p>
+                            <label for="mensaje">Mensaje:</label>
+                        </p>
+
+                        <p>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </p>
+
+                    </fieldset>
+
+
+                    <button type="submit">Enviar mensaje</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- Información de contacto -->
+        <aside class="contact-information">
+
+            <div class="container">
+
+                <h2>Información adicional</h2>
+
+                <p>
+                    CodeLearn es un proyecto educativo enfocado en facilitar
+                    el aprendizaje de programación para estudiantes y
+                    principiantes.
+                </p>
+
+                <address>
+
+                    <p>
+                        <strong>Correo:</strong>
+                        <a href="mailto:contacto@codelearn.com">
+                            contacto@codelearn.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <strong>Proyecto:</strong>
+                        CodeLearn
+                    </p>
+
+                </address>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 CodeLearn. Todos los derechos reservados.
+            </p>
+
+            <address>
+                Proyecto educativo de desarrollo web.
+            </address>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
